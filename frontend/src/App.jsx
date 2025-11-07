@@ -13,11 +13,7 @@ function App() {
   return (
     <div>
       <CreateTodo></CreateTodo>
-      <Todos todos={[{
-        title: todoing.title,
-        description: todoing.description,
-        completed: todoing.completed,
-      }]}></Todos>
+      <Todos todos={todoing}></Todos>
     </div >
   )
 }

@@ -7,9 +7,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-
-
-
 app.post("/todo", async (req, res) => {
     const createparseload = req.body;
     const parseload = createTodo.safeParse(createparseload);
